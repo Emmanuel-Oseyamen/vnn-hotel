@@ -1,89 +1,80 @@
-import Image from "next/image";
-
 import {
   Wifi,
   Utensils,
   Car,
   Dumbbell,
-  Waves,
+  Building,
   Clock,
 } from "lucide-react";
 
 const amenities = [
   {
-    image: "/amenities/wifi.png",
-    title: "Free WiFi",
-    desc: "High-speed internet throughout the hotel.",
+    icon: Wifi,
+    title: "Free Wi-Fi",
   },
   {
-    image: "/amenities/restaurant.png",
+    icon: Utensils,
     title: "Restaurant",
-    desc: "Local & continental dishes available.",
   },
   {
-    image: "/amenities/parking.png",
+    icon: Car,
     title: "Free Parking",
-    desc: "Secure parking space for guests.",
   },
   {
-    image: "/amenities/gym.png",
+    icon: Dumbbell,
     title: "Fitness Center",
-    desc: "Fully equipped modern gym.",
   },
   {
-    image: "/amenities/pool.png",
-    title: "Swimming Pool",
-    desc: "Relax in our luxury outdoor pool.",
+    icon: Building,
+    title: "Conference Hall",
   },
   {
-    image: "/amenities/service.webp",
+    icon: Clock,
     title: "24/7 Service",
-    desc: "We’re always available for you.",
   },
 ];
 
 export default function Amenities() {
   return (
     <section id="amenities" className="bg-slate-50 py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
 
         {/* Header */}
-        <div className="mb-12 text-center">
+        <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-slate-900">
-            Amenities & Facilities
+            Hotel Amenities
           </h2>
-          <p className="mt-3 text-slate-600">
+
+          <p className="mt-3 text-slate-500">
             Everything you need for a comfortable stay
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {amenities.map((item, index) => (
-            <div
-              key={index}
-              className="group overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="relative h-56 overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition duration-700 group-hover:scale-110"
-                />
-              </div>
+        {/* Amenities Grid */}
+        <div className="grid grid-cols-2 gap-y-12 md:grid-cols-3">
 
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-slate-900">
+          {amenities.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="flex h-28 w-28 items-center justify-center rounded-full bg-slate-200 transition hover:bg-slate-300">
+                  <Icon
+                    size={38}
+                    className="text-slate-900"
+                  />
+                </div>
+
+                <h3 className="mt-5 text-xl font-semibold text-slate-900">
                   {item.title}
                 </h3>
-
-                <p className="mt-2 text-sm text-slate-600">
-                  {item.desc}
-                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
+
         </div>
 
       </div>

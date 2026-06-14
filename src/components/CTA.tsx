@@ -15,7 +15,7 @@ export default function CTA() {
 
           {/* WhatsApp Booking */}
           <a
-            href="https://wa.me/2348145458745?text=Hello%20VNN%20Hotel%2C%20I%20would%20like%20to%20book%20a%20room"
+            href="https://wa.me/2349066477122?text=Hello%20VNN%20Hotel%2C%20I%20would%20like%20to%20book%20a%20room"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-amber-500 px-8 py-3 font-semibold text-black transition hover:bg-amber-400"
@@ -25,7 +25,7 @@ export default function CTA() {
 
           {/* Call */}
           <a
-            href="tel:+234XXXXXXXXXX"
+            href="tel:+2348145458745"
             className="rounded-lg border border-white px-8 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
           >
             Call Now

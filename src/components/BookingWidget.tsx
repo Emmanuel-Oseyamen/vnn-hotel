@@ -21,7 +21,7 @@ Guests: ${guests}
 Please let me know availability.`;
 
     const whatsappUrl =
-      `https://wa.me/2348145458745?text=${encodeURIComponent(message)}`;
+      `https://wa.me/2349066477122?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank");
   };
@@ -78,9 +78,9 @@ Please let me know availability.`;
                 onChange={(e) => setRoomType(e.target.value)}
                 className="w-full rounded-lg border border-slate-700 bg-slate-800 p-3"
               >
-                <option>Deluxe Room</option>
-                <option>Executive Room</option>
-                <option>Presidential Suite</option>
+                <option>Standard Room</option>
+                <option>Elegant Room</option>
+                <option>Executive Suite</option>
               </select>
             </div>
 

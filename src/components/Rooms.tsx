@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const rooms = [
   {
-    name: "Deluxe Room",
-    price: "₦18,000/night",
-    image: "/rooms/room-2.webp",
+    name: "Standard Room",
+    price: "₦15,000/night",
+    image: "/rooms/room-2.png",
     desc: "Spacious room with city view, king-size bed and modern amenities.",
   },
   {
-    name: "Executive Suite",
-    price: "₦25,000/night",
-    image: "/rooms/room-1.webp",
+    name: "Elegant Suite",
+    price: "₦20,000/night",
+    image: "/rooms/room-1.png",
     desc: "Luxury suite with lounge area, premium comfort and balcony view.",
   },
   {
-    name: "Standard Room",
+    name: "Executive Suite",
     price: "₦30,000/night",
-    image: "/rooms/room-3.jpg",
+    image: "/rooms/room-4.png",
     desc: "Comfortable and affordable room perfect for short stays.",
   },
 ];
