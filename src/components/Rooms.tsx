@@ -8,16 +8,16 @@ const rooms = [
     desc: "Spacious room with city view, king-size bed and modern amenities.",
   },
   {
-    name: "Elegant Suite",
+    name: "Elegant Room",
     price: "₦20,000/night",
     image: "/rooms/room-1.png",
-    desc: "Luxury suite with lounge area, premium comfort and balcony view.",
+    desc: "Comfortable and affordable room perfect for short stays.",
   },
   {
-    name: "Executive Suite",
+    name: "Suite",
     price: "₦30,000/night",
     image: "/rooms/room-4.png",
-    desc: "Comfortable and affordable room perfect for short stays.",
+    desc: "Luxury suite with lounge area, premium comfort and balcony view.",
   },
 ];
 

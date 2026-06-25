@@ -3,7 +3,7 @@ import Image from "next/image";
 const images = [
   "/gallery/gallery-1.png",
   "/gallery/gallery-2.jpeg",
-  "/gallery/gallery-3.jpeg",
+  "/gallery/gallery-3.png",
   "/gallery/gallery-4.png",
   "/gallery/gallery-5.png",
   "/gallery/gallery-6.png",
