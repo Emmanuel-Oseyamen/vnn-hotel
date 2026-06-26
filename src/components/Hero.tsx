@@ -35,7 +35,7 @@ export default function Hero() {
               textShadow: "0 2px 12px rgba(0,0,0,.5)",
             }}
           >
-            to VNN Suites and Resorts
+            to De VNN Suites and Resorts
           </p>
 
           <p className="mt-4 text-sm uppercase tracking-[4px] text-[#D4A373] md:text-base">
