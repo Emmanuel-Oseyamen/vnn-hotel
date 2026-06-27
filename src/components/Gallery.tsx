@@ -6,7 +6,7 @@ const images = [
   "/gallery/gallery-3.png",
   "/gallery/gallery-4.png",
   "/gallery/gallery-5.png",
-  "/gallery/gallery-6.png",
+  "/gallery/gallery-6.jpg",
 ];
 
 export default function Gallery() {
